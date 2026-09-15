@@ -1,5 +1,5 @@
 <template>
-<h1>Contact</h1>
+<h1>The Team</h1>
 </template>
 <style>
 

@@ -1,0 +1,158 @@
+/* Load globally after your existing main.css. */
+:root {
+  --site-background: #03113c;
+  --site-surface: #0b1b35;
+  --site-text: #f5f6fa;
+  --site-muted: #c1cada;
+  --site-gold: #f4c450;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--site-background);
+  color: var(--site-text);
+}
+
+#__nuxt {
+  min-height: 100vh;
+  background: var(--site-background);
+  color: var(--site-text);
+}
+
+/* The app ID gives these rules priority over the existing scoped styles. */
+#__nuxt .header,
+#__nuxt .header-main,
+#__nuxt .notary-home,
+#__nuxt .notary-home .services,
+#__nuxt .mng-services {
+  background: var(--site-background);
+  color: var(--site-text);
+}
+
+#__nuxt .notary-home .services::before {
+  display: none;
+}
+
+#__nuxt .notary-home .section-heading h2,
+#__nuxt .mng-services .mng-heading h2,
+#__nuxt .mng-services .mng-card h3,
+#__nuxt .mng-services .mng-info h2 {
+  color: var(--site-text);
+}
+
+#__nuxt .notary-home .service-values,
+#__nuxt .notary-home .service-area,
+#__nuxt .notary-home #pricing-disclaimer,
+#__nuxt .mng-services .mng-heading p,
+#__nuxt .mng-services .mng-description,
+#__nuxt .mng-services .mng-card ul,
+#__nuxt .mng-services .mng-details p,
+#__nuxt .mng-services .mng-info p {
+  color: var(--site-muted);
+}
+
+#__nuxt .mng-services .mng-card {
+  background: linear-gradient(135deg, #07152d, #102344);
+  color: var(--site-text);
+  border-color: #44516a;
+  box-shadow: 0 5px 16px #0003;
+}
+
+#__nuxt .mng-services .mng-info {
+  background: var(--site-surface);
+  color: var(--site-text);
+}
+
+#__nuxt .mng-services .mng-price,
+#__nuxt .mng-services .mng-travel > a {
+  color: var(--site-gold);
+}
+
+#__nuxt .mng-services .mng-icon {
+  border-color: #b58b35;
+}
+
+#__nuxt .mng-services .mng-details summary,
+#__nuxt .mng-services .mng-travel summary,
+#__nuxt .mng-services .mng-contact {
+  color: var(--site-text);
+  background: #102344;
+  border-color: #a88437;
+}
+
+/* Keep dark lettering on gold actions. */
+#__nuxt .mng-services .mng-button,
+#__nuxt .notary-home .gold-button {
+  color: #03132d;
+}
+
+#__nuxt .desktop-nav a,
+#__nuxt .desktop-nav button,
+#__nuxt .mobile-nav a,
+#__nuxt .mobile-nav button {
+  color: var(--site-text);
+  text-decoration: none;
+}
+
+#__nuxt .desktop-nav button,
+#__nuxt .mobile-nav button {
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+}
+
+#__nuxt .desktop-nav button {
+  padding: 0;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+#__nuxt .mobile-nav {
+  background: var(--site-background);
+}
+
+#__nuxt .mobile-nav button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff26;
+}
+
+#__nuxt .desktop-nav a:hover,
+#__nuxt .desktop-nav a.router-link-active,
+#__nuxt .desktop-nav button:hover,
+#__nuxt .mobile-nav a:hover,
+#__nuxt .mobile-nav a.router-link-active,
+#__nuxt .mobile-nav button:hover {
+  color: var(--site-gold);
+}
+
+#__nuxt .desktop-nav button:focus-visible,
+#__nuxt .mobile-nav button:focus-visible,
+#__nuxt .mng-services .mng-button:focus-visible {
+  outline: 3px solid #80b7ff;
+  outline-offset: 4px;
+}
+
+
+body {
+  background-color: #03113c;
+  background-image:
+    linear-gradient(rgb(3 17 60 / 65%), rgb(3 17 60 / 65%)),
+    url('../images/your-background-image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#__nuxt,
+#__nuxt .notary-home,
+#__nuxt .notary-home .services,
+#__nuxt .mng-services {
+  background: transparent;
+}
