@@ -40,7 +40,7 @@ const closeMenu = () => {
       <!-- Desktop Navigation -->
       <nav class="desktop-nav">
         <NuxtLink to="/home" class="shadow-text">HOME</NuxtLink>
-        <!-- <NuxtLink to="/about" class="shadow-text">THE TEAM</NuxtLink> -->
+        <NuxtLink to="/about" class="shadow-text">ABOUT US</NuxtLink>
         <NuxtLink to="/services" class="shadow-text">SERVICES</NuxtLink>
         <button type="button" class="shadow-text" @click="openContact()">CONTACT US</button>
       </nav>
@@ -67,6 +67,7 @@ const closeMenu = () => {
       <!-- <NuxtLink to="/about" @click="closeMenu">
         THE TEAM
       </NuxtLink> -->
+        <NuxtLink to="/about"  class="shadow-text">ABOUT</NuxtLink>
 
       <NuxtLink to="/services" @click="closeMenu">
         SERVICES

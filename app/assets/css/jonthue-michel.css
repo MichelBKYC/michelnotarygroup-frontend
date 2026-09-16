@@ -1,0 +1,67 @@
+.jonthue-page{--navy:#061431;--gold:#dfbd75;--gold-dark:#806019;--cream:#faf8f3;color:var(--navy);background:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+.jonthue-page *,.jonthue-page *::before,.jonthue-page *::after{box-sizing:border-box}
+.jonthue-page :where(h1,h2,h3,p,dl,dd,ul){margin:0}
+.jonthue-page :where(h1,h2,h3){font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.18}
+.jonthue-container{width:min(1080px,calc(100% - 64px));margin-inline:auto}
+.section-space{padding-block:84px}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dark)}
+.eyebrow.light{color:var(--gold)}
+.jonthue-hero{position:relative;isolation:isolate;overflow:hidden;color:#fff;text-align:center;background:radial-gradient(ellipse at 50% 15%,#17335b,transparent 65%),var(--navy);border-bottom:3px solid var(--gold)}
+.jonthue-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:url('/images/jonthue-michel/navy-pattern.svg');opacity:.7}
+.hero-content{padding-block:76px 39px}
+.hero-content>.eyebrow{font-family:Georgia,serif;font-size:1.65rem;letter-spacing:.16em;font-weight:400}
+.hero-role{margin-top:7px!important;font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:#e1e6f0}
+.hero-role span{margin-inline:8px;color:var(--gold)}
+.gold-rule{width:52px;height:1px;background:var(--gold);margin:25px auto}
+h1{font-size:clamp(2.5rem,5.2vw,4.6rem);letter-spacing:-.025em}
+h1 em,.area-copy em{color:var(--gold);font-weight:400}
+.hero-description{max-width:530px;margin:23px auto 29px!important;color:#e1e6f0;font-size:1rem}
+.jonthue-button{display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:52px;max-width:100%;padding:15px 25px;border:1px solid transparent;border-radius:3px;font:700 .73rem/1.5 Arial,Helvetica,sans-serif;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .18s,box-shadow .18s}
+.jonthue-button span{font-size:1.3rem;line-height:1}
+.gold-button{color:var(--navy);background:linear-gradient(110deg,#f0d594,#d6ae5f);border-color:#e5c784;box-shadow:0 5px 18px #00000015}
+.gold-button:hover{background:#f4db9d;box-shadow:0 6px 20px #00000028}
+.jonthue-page :where(a,button):focus-visible{outline:3px solid #3275ba;outline-offset:5px}
+.jonthue-hero button:focus-visible{outline-color:#fff}
+.hero-locations{margin-top:38px!important;font-size:.65rem;letter-spacing:.17em;text-transform:uppercase;color:#d9deea}
+.hero-locations span{color:var(--gold);padding-inline:14px}
+.section-heading{text-align:center}
+h2{font-size:clamp(1.9rem,3.3vw,2.75rem);margin-top:13px!important}
+.notary-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center;margin:42px auto 0;max-width:910px}
+.commission-card{text-align:center;padding:28px 30px;background:linear-gradient(145deg,#102849,#061431);color:#fff;border:1px solid #cba861;box-shadow:0 12px 28px #06143115;outline:1px solid #dfbd7540;outline-offset:-9px}
+.monogram{display:block;margin:0 auto 15px}
+.commission-card h3{font-size:1.85rem}
+.card-role{color:var(--gold);font-size:.78rem;margin-top:4px!important;letter-spacing:.1em}
+.commission-card .gold-rule{margin-block:20px}
+dl>div+div{margin-top:13px}dt{color:#c5cfdf;font-size:.7rem}dd{font-size:.96rem;letter-spacing:.025em}
+.card-state{border-top:1px solid #dfbd7540;padding-top:20px;margin-top:22px!important;font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold)}
+.notary-copy h3{font-size:clamp(1.85rem,3vw,2.5rem);margin:15px 0 22px}
+.notary-copy>p:not(.eyebrow){color:#515968}
+.copy-detail{display:flex;gap:17px;border-top:1px solid #ded5c4;margin-top:25px;padding-top:23px;color:#515968;font-size:.9rem}
+.copy-detail>span{color:var(--gold-dark);font-size:1.4rem}
+.services-section{background:#f0ede6;border-top:1px solid #e3ddcf}
+.services-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin:36px auto 30px!important;max-width:910px}
+.service-card{text-align:center;border:1px solid #d9ccb1;padding:26px 15px;background:#faf8f3}
+.service-card img{display:block;margin:0 auto 15px}
+.service-card h3{font-family:Arial,Helvetica,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1.6}
+.center{text-align:center}.outline-button{border-color:#99762d;color:var(--navy);background:transparent}.outline-button:hover{background:#e8dfcd}
+.area-section{color:white;background:radial-gradient(ellipse at 15% 50%,#17345a,transparent 65%),var(--navy);border-block:1px solid var(--gold)}
+.area-grid{display:grid;grid-template-columns:230px 1fr;gap:65px;align-items:center;max-width:980px}
+.area-emblem{text-align:center;color:var(--gold)}
+.area-emblem>span{width:160px;height:160px;display:grid;place-items:center;margin:auto;border:1px solid var(--gold);border-radius:50%;outline:1px solid #dfbd7540;outline-offset:10px;font:3.9rem Georgia,serif}
+.area-emblem p{text-transform:uppercase;letter-spacing:.3em;font-size:.7rem;margin-top:27px!important}
+.area-copy h2{font-size:clamp(1.9rem,3vw,2.6rem)}
+.area-copy>p:not(.eyebrow){margin-top:22px;color:#e1e6ef;max-width:650px}
+.area-copy strong{font-weight:600}.area-copy .travel-note{font-size:.82rem;color:#c1cbdb!important;margin-top:15px!important}
+.booking-section{background:radial-gradient(ellipse at 50% 100%,#eee2c9,transparent 75%),var(--cream)}
+.booking-description{margin:17px 0 25px!important;color:#515968}
+.contact-details{display:flex;flex-direction:column;gap:4px;margin-top:24px;font-style:normal}
+.contact-details a{width:fit-content;max-width:100%;margin:auto;overflow-wrap:anywhere;color:var(--navy);font-size:.9rem;text-decoration:none}
+.contact-details a:first-child{font-family:Georgia,serif;font-size:1.4rem}
+.contact-details a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.jonthue-container{width:calc(100% - 40px)}.section-space{padding-block:56px}.hero-content{padding-block:56px 30px}.notary-grid{gap:32px;grid-template-columns:1fr;max-width:500px}.commission-card{width:100%;max-width:370px;justify-self:center}.notary-copy{text-align:center}.copy-detail{text-align:left}.area-grid{grid-template-columns:1fr;gap:36px;text-align:center}.area-emblem>span{width:100px;height:100px;font-size:2.8rem}.area-copy>p{margin-inline:auto}.services-grid{grid-template-columns:repeat(2,1fr)}.hero-locations{letter-spacing:.09em;line-height:2.2}.hero-locations span{padding-inline:5px}}
+@media(max-width:380px){.jonthue-container{width:calc(100% - 32px)}.hero-role{letter-spacing:.09em}.jonthue-button{padding-inline:16px;gap:12px;font-size:.68rem}.service-card{padding-inline:10px}.service-card h3{font-size:.65rem}.hero-content>.eyebrow{font-size:1.45rem}}
+@media(prefers-reduced-motion:reduce){.jonthue-button{transition:none}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.services-grid .service-card:last-child:nth-child(3n + 1){grid-column:2}
+@media(max-width:760px){.services-grid .service-card:last-child:nth-child(3n + 1){grid-column:1 / -1}}
+@media(max-width:480px){.services-grid{grid-template-columns:1fr}.services-grid .service-card:last-child:nth-child(3n + 1){grid-column:auto}}
