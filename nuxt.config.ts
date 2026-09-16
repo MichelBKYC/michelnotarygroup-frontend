@@ -1,10 +1,12 @@
 export default defineNuxtConfig({
   ssr: false,
+
   routeRules: {
-  '/': {
-    redirect: '/home'
-  }
-},
+    '/': {
+      redirect: '/home'
+    }
+  },
+
   compatibilityDate: '2025-07-15',
 
   devtools: {
@@ -13,12 +15,29 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/icon',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
+
+  site: {
+    url: 'https://michelnotary.com/',
+    name: 'The Michel Notary Group'
+  },
+
+  sitemap: {
+    exclude: ['/']
+  },
+
+  robots: {
+    sitemap: [
+      'https://michelnotary.com//sitemap.xml'
+    ]
+  },
 
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/site-dark.css',
+    '~/assets/css/site-dark.css'
   ],
 
   runtimeConfig: {
@@ -27,11 +46,33 @@ export default defineNuxtConfig({
     enquirySmtpUser: process.env.SMTP_USER,
     enquirySmtpPassword: process.env.SMTP_PASS,
     enquiryFrom: process.env.SMTP_FROM,
-    enquiryTo: process.env.CONTACT_EMAIL,
+    enquiryTo: process.env.CONTACT_EMAIL
   },
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en-US'
+      },
+
+      title: 'The Michel Notary Group | Atlanta Mobile Notary',
+
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Professional and convenient mobile notary services throughout the Atlanta metro area.'
+        },
+        {
+          name: 'robots',
+          content: 'index, follow, max-image-preview:large'
+        },
+        {
+          name: 'theme-color',
+          content: '#03113c'
+        }
+      ],
+
       link: [
         {
           rel: 'icon',
